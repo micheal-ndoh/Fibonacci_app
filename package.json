@@ -1,0 +1,28 @@
+{
+  "name": "fibonacci-calculator",
+  "version": "0.1.0",
+  "description": "A desktop application to calculate Fibonacci numbers.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "tauri dev",
+    "build": "tauri build"
+  },
+  "dependencies": {
+    "tauri": "0.15.0"
+  },
+  "devDependencies": {
+    "vite": "6.2.2",
+    "vue": "^3.0.0"
+  },
+  "keywords": [
+    "fibonacci",
+    "calculator",
+    "tauri",
+    "rust"
+  ],
+  "author": "Micheal Ndoh",
+  "repository": "https://github.com/micheal-ndoh/fibonacci-calculator",
+  "bugs": "https://github.com/micheal-ndoh/fibonacci-calculator/issues",
+
+  "license": "MIT"
+}
