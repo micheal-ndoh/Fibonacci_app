@@ -168,3 +168,23 @@ The application ensures that only valid numbers are processed and if an invalid 
 - Added multiple calculation feature to compute multiple Fibonacci numbers in sequence.
 - This application can be packaged as an installable `.exe`, `.dmg`, or `.AppImage`.
 - The application can be optimized for performance.
+- The application can be distributed as a desktop application.
+
+## TODO
+
+- Add more features to the application.
+- Optimize the application for performance.
+- optimize the application for size.
+- Add more languages to the application.
+- Add more themes to the application.
+- Add an icon for the application.
+
+## Feedback
+
+If you have any feedback or suggestions, please let me know.
+reach me via [gmail](michaelndoh9@gmail.com)
+leave a Star on this repository.
+
+# Thank you
+
+# Check your applications and click on the fibonacci calculator to get started.
