@@ -157,7 +157,7 @@ The Fibonacci Calculator is a cross-platform desktop application built using Rus
 
 - Enter a number in the input field and click the "Calculate" button to calculate the Fibonacci number.
 - The result will be displayed below the input field.
-- You can input multiple numbers in sequence but separate them by commas or spaces.
+- You can input multiple numbers in sequence but separate them by commas.
 
 ## Error Handling
 
