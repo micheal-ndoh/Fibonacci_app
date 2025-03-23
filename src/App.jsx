@@ -8,7 +8,7 @@ function App() {
 
   async function calculateFibonacci() {
     try {
-      const numberList = numbers.split(",").map(Number);
+      const numberList = numbers.split(/[^0-9]/).map(Number);
 
       const fibResults = await invoke("fibonacci", { numbers: numberList });
 
@@ -18,16 +18,16 @@ function App() {
       setResult(resultText);
     } catch (error) {
       setResult(
-        "Error calculating the  Fibonacci. Please enter valid number(s) separated by commas."
+        "Error calculating the fibonacci. Please enter valid number(s) separated by commas."
       );
     }
   }
 
   return (
     <main className="container">
-      <h1>Welcome to my Fibonacci Calculator</h1>
+      <h1>Welcome to Fibonacci Calculator</h1>
 
-      <p>Click on the Tauri, Vite, and React logos to learn more.</p>
+      <p>Click on the Vite, Tauri and React logos to learn more.</p>
       <div className="row">
         <a href="https://vitejs.dev" target="_blank">
           <img src="/vite.svg" className="logo vite" alt="Vite logo" />
@@ -39,7 +39,7 @@ function App() {
           <img src="/react.svg" className="logo react" alt="React logo" />
         </a>
       </div>
-      <p>Enter the number(s) your wish to Calculate.</p>
+      <p>Enter the number(s) seperated by a comma(,) and click Calculate.</p>
       <form
         className="row"
         onSubmit={(e) => {

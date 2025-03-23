@@ -9,9 +9,9 @@ fn fibonacci(numbers: Vec<u32>) -> Vec<u64> {
                 let mut a = 0;
                 let mut b = 1;
                 for _ in 2..=n {
-                    let c = a + b;
+                    let temp: u64 = a + b;
                     a = b;
-                    b = c;
+                    b = temp;
                 }
                 b
             }
