@@ -28,7 +28,7 @@ function App() {
       <h1>Welcome to Fibonacci Calculator</h1>
 
       <p>Click on the Vite, Tauri and React logos to learn more.</p>
-      <div className="row">
+      <div className="row logos">
         <a href="https://vitejs.dev" target="_blank">
           <img src="/vite.svg" className="logo vite" alt="Vite logo" />
         </a>
@@ -39,7 +39,7 @@ function App() {
           <img src="/react.svg" className="logo react" alt="React logo" />
         </a>
       </div>
-      <p>Enter the number(s) seperated by a comma(,) and click Calculate.</p>
+      <p>Enter the number(s) separated by a comma(,) and click Calculate.</p>
       <form
         className="row"
         onSubmit={(e) => {
@@ -50,11 +50,11 @@ function App() {
         <input
           id="fibonacci-input"
           onChange={(e) => setNumbers(e.currentTarget.value)}
-          placeholder="Enter numbers "
+          placeholder="Enter numbers"
         />
         <button type="submit">Calculate</button>
       </form>
-      <pre>{result}</pre>
+      <pre className="result">{result}</pre>
     </main>
   );
 }
