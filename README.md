@@ -94,11 +94,12 @@ The Fibonacci Calculator is a cross-platform desktop application built using Rus
 ...
 
 7. **Package the application:**
-   Firstly list all the targets for which you want to build the application using.
+   Firstly list all the targets for which you want to build the application using and install the one you wish to using to build the application.
 
    ```sh
    rustup target list
    ```
+   
 
    Then from the **`src`** directory, run the following commands for each target:
 
