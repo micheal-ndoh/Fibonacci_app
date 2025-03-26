@@ -99,6 +99,11 @@ The Fibonacci Calculator is a cross-platform desktop application built using Rus
    ```sh
    rustup target list
    ```
+
+    Install/add using 
+    ```rust 
+    rustup target add <name of target>
+    ```
    
 
    Then from the **`src`** directory, run the following commands for each target:
@@ -177,9 +182,12 @@ The application ensures that only valid numbers are processed and if an invalid 
 - Optimize the application for performance.
 - optimize the application for size.
 - Add more languages to the application.
-- Add more themes to the application.
 - Add an icon for the application.
 
+## DONE
+
+- Add more themes to the application.
+  
 ## Feedback
 
 If you have any feedback or suggestions, please let me know.
