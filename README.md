@@ -100,11 +100,11 @@ The Fibonacci Calculator is a cross-platform desktop application built using Rus
    rustup target list
    ```
 
-    Install/add using 
-    ```rust 
+    Install/add using
+
+    ```rust
     rustup target add <name of target>
     ```
-   
 
    Then from the **`src`** directory, run the following commands for each target:
 
@@ -196,4 +196,4 @@ leave a Star on this repository.
 
 # Thank you
 
-# Check your applications and click on the fibonacci calculator to get started.
+# Check your applications and click on the fibonacci calculator to get started
