@@ -1,8 +1,8 @@
 {
   "name": "fibonacci-calculator",
   "private": true,
-  "description": "A desktop application to calculate fibonacci numbers",  
-  "version": "0.1.0",
+  "description": "A desktop application to calculate fibonacci numbers",
+  "version": "0.1.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -21,10 +21,8 @@
     "@vitejs/plugin-react": "^4.3.4",
     "vite": "^6.0.3"
   },
-
   "author": "Micheal Ndoh",
   "repository": "https://github.com/micheal-ndoh/fibonacci-calculator",
   "bugs": "https://github.com/micheal-ndoh/fibonacci-calculator/issues",
-
   "license": "MIT"
 }
