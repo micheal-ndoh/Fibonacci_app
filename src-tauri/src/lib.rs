@@ -1,24 +1,27 @@
-// Learn more about Tauri commands at https://tauri.app/develop/calling-rust/
+use num_bigint::BigUint;
+use num_traits::{One, Zero};
+
 #[tauri::command]
-fn fibonacci(numbers: Vec<u32>) -> Vec<u64> {
-    numbers.into_iter().map(|n| {
-        match n {
-            0 => 0,
-            1 => 1,
+fn fibonacci(numbers: Vec<u32>) -> Vec<String> {
+    numbers
+        .into_iter()
+        .map(|n| match n {
+            0 => BigUint::zero(),
+            1 => BigUint::one(),
             _ => {
-                let mut a = 0;
-                let mut b = 1;
+                let mut a = BigUint::zero();
+                let mut b = BigUint::one();
                 for _ in 2..=n {
-                    let temp: u64 = a + b;
+                    let temp = a + &b;
                     a = b;
                     b = temp;
                 }
                 b
             }
-        }
-    }).collect()
+        })
+        .map(|big_num| big_num.to_string()) // Convert BigUint to String for easier handling in the frontend
+        .collect()
 }
-
 
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
